@@ -1,0 +1,37 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
+  "Erebus": {
+    "connects_to": ["Oceanus"],
+    "starting": true,
+    "requires": "|Gate to the underworld|"
+  },
+  "Oceanus": {
+    "connects_to": ["Mourning Fields"],
+    "requires": "{OptionCount(Grasp, Grasp_For_Second_Region)}"
+  },
+  "Mourning Fields": {
+    "connects_to": ["Tartarus"],
+    "requires": "{OptionCount(Grasp, Grasp_For_Third_Region)}"
+  },
+  "Tartarus": {
+    "connects_to": [],
+    "requires": "{OptionCount(Grasp, Grasp_For_Fourth_Region)}"
+  },
+  "Ephyra": {
+    "connects_to": ["Rift of Thessaly"],
+    "starting": true,
+    "requires": "|Gate to the surface|"
+  },
+  "Rift of Thessaly": {
+    "connects_to": ["Mount Olympus"],
+    "requires": "{OptionCount(Grasp, Grasp_For_Second_Region)}"
+  },
+  "Mount Olympus": {
+    "connects_to": ["The Summit"],
+    "requires": "{OptionCount(Grasp, Grasp_For_Third_Region)}"
+  },
+  "The Summit": {
+    "connects_to": [],
+    "requires": "{OptionCount(Grasp, Grasp_For_Fourth_Region)}"
+  }
+}

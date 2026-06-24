@@ -1,0 +1,76 @@
+{
+  "Requirements": {},
+  "Gates": {
+    "hidden": true
+  },
+  "Underworld": {
+    "hidden": true,
+    "yaml_option": ["underworld_enabled"]
+  },
+  "Surface": {
+    "hidden": true,
+    "yaml_option": ["surface_enabled"]
+  },
+  "Erebus": {
+    "hidden": true,
+    "yaml_option": ["underworld_enabled"]
+  },
+  "Oceanus": {
+    "yaml_option": ["underworld_enabled"]
+  },
+  "Mourning Fields": {
+    "yaml_option": ["underworld_enabled"]
+  },
+  "Tartarus": {
+    "yaml_option": ["underworld_enabled"]
+  },
+  "Ephyra": {
+    "yaml_option": ["surface_enabled"]
+  },
+  "Rift of Thessaly": {
+    "yaml_option": ["surface_enabled"]
+  },
+  "Mount Olympus": {
+    "yaml_option": ["surface_enabled"]
+  },
+  "The Summit": {
+    "yaml_option": ["surface_enabled"]
+  },
+  "Guardians": {
+    "hidden": true
+  },
+  "Guardians 8 Fear": {
+    "yaml_option": ["guardians_8_fear_enabled"]
+  },
+  "Guardians 16 Fear": {
+    "yaml_option": ["guardians_16_fear_enabled"]
+  },
+  "Guardians 32 Fear": {
+    "yaml_option": ["guardians_32_fear_enabled"]
+  },
+  "Unrivaled Guardians": {
+    "yaml_option": ["unrivaled_guardians_enabled"]
+  },
+  "Wardens": {
+    "yaml_option": ["wardens_enabled"]
+  },
+  "NPCs": {
+    "yaml_option": ["npcs_enabled"]
+  },
+  "Arcana Cards": {},
+  "Location Clears": {
+    "hidden": true
+  },
+  "8 Fear Location Clears": {
+    "hidden": true,
+    "yaml_option": ["locations_8_fear_enabled"]
+  },
+  "Awakening": {
+    "hidden": true,
+    "yaml_option": ["awakening_enabled"]
+  },
+  "Hidden Aspects": {
+    "hidden": true,
+    "yaml_option": ["hidden_aspects_enabled"]
+  }
+}

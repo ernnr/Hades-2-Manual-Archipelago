@@ -1,0 +1,20 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.game.schema.json",
+  "game": "Hades2",
+  "creator": "ernnr",
+  "filler_item_name": "Ashes",
+  "starting_items": [
+    {
+      "item_categories": ["Gates"],
+      "random": 1
+    },
+    {
+      "item_categories": ["Weapons", "Aspects"],
+      "random": 1
+    },
+    {
+      "item_categories": ["Keepsakes"],
+      "random": 1
+    }
+  ]
+}
