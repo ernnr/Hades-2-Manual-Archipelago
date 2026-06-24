@@ -1,0 +1,1018 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "data": [
+    {
+      "name": "Grasp",
+      "category": ["Requirements"],
+      "classification_count": {
+        "progression": 15,
+        "progression_skip_balancing": 30
+      }
+    },
+    {
+      "count": "1",
+      "name": "Gate to the underworld",
+      "category": ["Underworld", "Requirements", "Gates"],
+      "progression": true
+    },
+    {
+      "count": "1",
+      "name": "Gate to the surface",
+      "category": ["Surface", "Requirements", "Gates"],
+      "progression": true
+    },
+
+    {
+      "_comment": "-------------------- Arcana Cards --------------------",
+      "count": 1,
+      "name": "The Sorceress",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-0-0"
+    },
+    {
+      "count": 1,
+      "name": "The Wayword Son",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-0-1"
+    },
+    {
+      "count": 1,
+      "name": "The Huntress",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-0-2"
+    },
+    {
+      "count": 1,
+      "name": "Eternity",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-0-3"
+    },
+    {
+      "count": 1,
+      "name": "The Moon",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-0-4"
+    },
+    {
+      "count": 1,
+      "name": "The Furies",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-1-0"
+    },
+    {
+      "count": 1,
+      "name": "Persistence",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-1-1"
+    },
+    {
+      "count": 1,
+      "name": "The Messenger",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-1-2"
+    },
+    {
+      "count": 1,
+      "name": "The Unseen",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-1-3"
+    },
+    {
+      "count": 1,
+      "name": "Night",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-1-4"
+    },
+    {
+      "count": 1,
+      "name": "The Swift Runner",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-2-0"
+    },
+    {
+      "count": 1,
+      "name": "Death",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-2-1"
+    },
+    {
+      "count": 1,
+      "name": "The Centaur",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-2-2"
+    },
+    {
+      "count": 1,
+      "name": "Origination",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-2-3"
+    },
+    {
+      "count": 1,
+      "name": "The Lovers",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-2-4"
+    },
+    {
+      "count": 1,
+      "name": "The Enchantress",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-3-0"
+    },
+    {
+      "count": 1,
+      "name": "The Boatman",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-3-1"
+    },
+    {
+      "count": 1,
+      "name": "The Artificer",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-3-2"
+    },
+    {
+      "count": 1,
+      "name": "Excellence",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-3-3"
+    },
+    {
+      "count": 1,
+      "name": "The Queen",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-3-4"
+    },
+    {
+      "count": 1,
+      "name": "The Fates",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-4-0"
+    },
+    {
+      "count": 1,
+      "name": "The Champions",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-4-1"
+    },
+    {
+      "count": 1,
+      "name": "Strength",
+      "category": ["Arcana Cards"],
+      "useful": true,
+      "sort-key": "arcana-4-2"
+    },
+    {
+      "count": 1,
+      "name": "Divinity",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-4-3"
+    },
+    {
+      "count": 1,
+      "name": "Judgement",
+      "category": ["Arcana Cards", "Awakening"],
+      "useful": true,
+      "sort-key": "arcana-4-4"
+    },
+
+    {
+      "_comment": "-------------------- Weapons and Aspects --------------------",
+      "count": 1,
+      "name": "Witch's Staff",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-0-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Circe",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-0-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Momus",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-0-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Anubis",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-0-3"
+    },
+    {
+      "count": 1,
+      "name": "Sister Blades",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-1-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Artemis",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-1-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Pan",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-1-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Morrigan",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-1-3"
+    },
+    {
+      "count": 1,
+      "name": "Umbral Flames",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-2-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Moros",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-2-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Eos",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-2-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Supay",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-2-3"
+    },
+    {
+      "count": 1,
+      "name": "Moonstone Axe",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-3-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Charon",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-3-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Thanatos",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-3-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Nergal",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-3-3"
+    },
+    {
+      "count": 1,
+      "name": "Argent Skull",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-4-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Medea",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-4-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Persephone",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-4-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Hel",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-4-3"
+    },
+    {
+      "count": 1,
+      "name": "Black Coat",
+      "category": ["Weapons"],
+      "progression": true,
+      "sort-key": "aspects-5-0"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Selene",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-5-1"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Nyx",
+      "category": ["Aspects"],
+      "useful": true,
+      "sort-key": "aspects-5-2"
+    },
+    {
+      "count": 1,
+      "name": "Aspect of Shiva",
+      "category": ["Aspects", "Hidden Aspects"],
+      "useful": true,
+      "sort-key": "aspects-5-3"
+    },
+
+    {
+      "_comment": "-------------------- Vows --------------------",
+      "name": "Pain",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 2
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-0-0"
+    },
+    {
+      "name": "Grit",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 2
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-0-1"
+    },
+    {
+      "name": "Wards",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-0-2"
+    },
+    {
+      "name": "Frenzy",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 3
+      },
+      "sort-key": "vows-0-3"
+    },
+    {
+      "name": "Hordes",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 2
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-1-0"
+    },
+    {
+      "name": "Menace",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-1-1"
+    },
+    {
+      "name": "Return",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-1-2"
+    },
+    {
+      "name": "Fangs",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 2
+      },
+      "sort-key": "vows-1-3"
+    },
+    {
+      "name": "Scars",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 2
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-2-0"
+    },
+    {
+      "name": "Debt",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-2-1"
+    },
+    {
+      "name": "Shadow",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1
+      },
+      "value": {
+        "fear": 2
+      },
+      "sort-key": "vows-2-2"
+    },
+    {
+      "name": "Forfeit",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1
+      },
+      "value": {
+        "fear": 3
+      },
+      "sort-key": "vows-2-3"
+    },
+    {
+      "name": "Time",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 3
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-3-0"
+    },
+    {
+      "name": "Void",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 3
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-3-1"
+    },
+    {
+      "name": "Hubris",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1,
+        "filler": 1
+      },
+      "value": {
+        "fear": 1
+      },
+      "sort-key": "vows-3-2"
+    },
+    {
+      "name": "Denial",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 1
+      },
+      "value": {
+        "fear": 2
+      },
+      "sort-key": "vows-3-3"
+    },
+    {
+      "name": "Rivals",
+      "category": ["Vows"],
+      "classification_count": {
+        "progression": 4
+      },
+      "value": {
+        "fear": 2
+      },
+      "sort-key": "vows-4-0"
+    },
+
+    {
+      "_comment": "-------------------- Keepsakes --------------------",
+      "count": 1,
+      "name": "Silver Wheel",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-0"
+    },
+    {
+      "count": 1,
+      "name": "Knuckle Bones",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-1"
+    },
+    {
+      "count": 1,
+      "name": "Luckier Tooth",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-2"
+    },
+    {
+      "count": 1,
+      "name": "Ghost Onion",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-3"
+    },
+    {
+      "count": 1,
+      "name": "Evil Eye",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-4"
+    },
+    {
+      "count": 1,
+      "name": "Gold Purse",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-5"
+    },
+    {
+      "count": 1,
+      "name": "Engraved Pin",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-6"
+    },
+    {
+      "count": 1,
+      "name": "Discordant Bell",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-7"
+    },
+    {
+      "count": 1,
+      "name": "Metallic Droplet",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-8"
+    },
+    {
+      "count": 1,
+      "name": "White Antler",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-9"
+    },
+    {
+      "count": 1,
+      "name": "Moon Beam",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-0-10"
+    },
+    {
+      "count": 1,
+      "name": "Cloud Bangle",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-0"
+    },
+    {
+      "count": 1,
+      "name": "Iridescent Fan",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-1"
+    },
+    {
+      "count": 1,
+      "name": "Vivid Sea",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-2"
+    },
+    {
+      "count": 1,
+      "name": "Barley Sheaf",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-3"
+    },
+    {
+      "count": 1,
+      "name": "Harmonic Photon",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-4"
+    },
+    {
+      "count": 1,
+      "name": "Beautiful Mirror",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-5"
+    },
+    {
+      "count": 1,
+      "name": "Adamant Shard",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-6"
+    },
+    {
+      "count": 1,
+      "name": "Everlasting Ember",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-7"
+    },
+    {
+      "count": 1,
+      "name": "Sword Hilt",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-8"
+    },
+    {
+      "count": 1,
+      "name": "Gorgon Amulet",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-9"
+    },
+    {
+      "count": 1,
+      "name": "Fig Leaf",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-1-10"
+    },
+    {
+      "count": 1,
+      "name": "Silken Sash",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-0"
+    },
+    {
+      "count": 1,
+      "name": "Aromatic Phial",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-1"
+    },
+    {
+      "count": 1,
+      "name": "Concave Stone",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-2"
+    },
+    {
+      "count": 1,
+      "name": "Lion Fang",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-3"
+    },
+    {
+      "count": 1,
+      "name": "Blackened Fleece",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-4"
+    },
+    {
+      "count": 1,
+      "name": "Crystal Figurine",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-5"
+    },
+    {
+      "count": 1,
+      "name": "Experimental Hammer",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-6"
+    },
+    {
+      "count": 1,
+      "name": "Jeweled Pom",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-7"
+    },
+    {
+      "count": 1,
+      "name": "Calling Card",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-8"
+    },
+    {
+      "count": 1,
+      "name": "Time Piece",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-9"
+    },
+    {
+      "count": 1,
+      "name": "Transcendant Embryo",
+      "category": ["Keepsakes"],
+      "useful": true,
+      "sort-key": "keepsakes-2-10"
+    },
+
+    {
+      "_comment": "-------------------- Familiars --------------------",
+      "count": 1,
+      "name": "Frinos Familiar",
+      "category": ["Familiars"],
+      "useful": true,
+      "sort-key": "familiars-0-0"
+    },
+    {
+      "count": 1,
+      "name": "Frinos Daemonic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-0-1"
+    },
+    {
+      "count": 1,
+      "name": "Frinos Cherubic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-0-2"
+    },
+    {
+      "count": 1,
+      "name": "Frinos Moon-Touched",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-0-3"
+    },
+    {
+      "count": 1,
+      "name": "Frinos Draconic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-0-4"
+    },
+    {
+      "count": 1,
+      "name": "Frinos Nightmarish",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-0-5"
+    },
+    {
+      "count": 1,
+      "name": "Toula Familiar",
+      "category": ["Familiars"],
+      "useful": true,
+      "sort-key": "familiars-1-0"
+    },
+    {
+      "count": 1,
+      "name": "Toula Chthonic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-1-1"
+    },
+    {
+      "count": 1,
+      "name": "Toula Daemonic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-1-2"
+    },
+    {
+      "count": 1,
+      "name": "Toula Magickal",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-1-3"
+    },
+    {
+      "count": 1,
+      "name": "Toula Chaotic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-1-4"
+    },
+    {
+      "count": 1,
+      "name": "Toula Nightmarish",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-1-5"
+    },
+    {
+      "count": 1,
+      "name": "Raki Familiar",
+      "category": ["Familiars"],
+      "useful": true,
+      "sort-key": "familiars-2-0"
+    },
+    {
+      "count": 1,
+      "name": "Raki Chthonic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-2-1"
+    },
+    {
+      "count": 1,
+      "name": "Raki Vernal",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-2-2"
+    },
+    {
+      "count": 1,
+      "name": "Raki Moon-Touched",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-2-3"
+    },
+    {
+      "count": 1,
+      "name": "Raki Pheonix",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-2-4"
+    },
+    {
+      "count": 1,
+      "name": "Raki Nightmarish",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-2-5"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Familiar",
+      "category": ["Familiars"],
+      "useful": true,
+      "sort-key": "familiars-3-0"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Chaotic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-3-1"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Daemonic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-3-2"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Huntress",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-3-3"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Grecian",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-3-4"
+    },
+    {
+      "count": 1,
+      "name": "Hecuba Nightmarish",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-3-5"
+    },
+    {
+      "count": 1,
+      "name": "Gale Familiar",
+      "category": ["Familiars"],
+      "useful": true,
+      "sort-key": "familiars-4-0"
+    },
+    {
+      "count": 1,
+      "name": "Gale Hypnotic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-4-1"
+    },
+    {
+      "count": 1,
+      "name": "Gale Olympic",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-4-2"
+    },
+    {
+      "count": 1,
+      "name": "Gale Infernal",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-4-3"
+    },
+    {
+      "count": 1,
+      "name": "Gale Moon-Touched",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-4-4"
+    },
+    {
+      "count": 1,
+      "name": "Gale Nightmarish",
+      "category": ["Familiars", "Skins"],
+      "filler": true,
+      "sort-key": "familiars-4-5"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.meta.schema.json",
+  "_comment": [
+    "remove the _ before a non-comment/info propertie to enable it",
+    "For more info use json schemas to get a description and allowed value for every properties",
+    "https://github.com/ManualForArchipelago/Manual/blob/main/docs/resources/json-schemas-for-world-devs.md"
+  ],
+  "docs": {
+    "_comment": [
+      "For more info on the possible documentation properties check schema and/or the github",
+      "https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class"
+    ],
+    "apworld_description": [
+      "This is a manual implementation of Hades 2 for Archipelago multiworld.",
+      "At the start of the game, the player will be given a randomized weapon/aspect, keepsake, and either the Underworld or Surface path to start on.",
+      "As the player clears locations, defeats wardens/guardians, or meets NPCs, they will send items to the Archipelago.",
+      "The player will receive items from Archipelago like Arcana cards, Aspects, Keepsakes, Vows, and Grasp.",
+      "Since this is a manual implementation, it is up to the player to only use the items they have received from Archipelago to progress through the game.",
+      "As the player collects more and more Grasp, the player will be expected to progress further and further into either/both path(s).",
+      "Once the specified amount of Grasp has been collected, the player can defeat either Chronos or Typhon to claim victory."
+    ],
+    "web": {
+      "_comment": "for more info check github https://github.com/ArchipelagoMW/Archipelago/blob/main/docs/world%20api.md#webworld-class",
+      "theme": "grass",
+      "bug_report_page": "https://discord.gg/T5bcsVHByx",
+      "tutorials": [
+        {
+          "name": "Multiworld Setup Guide",
+          "description": "A guide to setting up manual game integration for Archipelago multiworld games.",
+          "language": "English",
+          "file_name": "setup_en.md",
+          "link": "setup/en",
+          "_authors": ["Fuzzy"],
+          "_comment": "if you don't include the authors it will use creator from game.json"
+        }
+      ],
+      "options_presets": {
+        "Normal": {
+          "underworld_enabled": true,
+          "surface_enabled": true,
+          "guardians_8_fear_enabled": true,
+          "guardians_16_fear_enabled": false,
+          "guardians_32_fear_enabled": false,
+          "unrivaled_guardians_enabled": false,
+          "locations_8_fear_enabled": false,
+          "wardens_enabled": true,
+          "npcs_enabled": true,
+          "awakening_enabled": true,
+          "hidden_aspects_enabled": true,
+          "Grasp_For_Second_Region": 7,
+          "Grasp_For_Third_Region": 14,
+          "Grasp_For_Fourth_Region": 21,
+          "Grasp_For_Victory": 30
+        },
+        "Hard": {
+          "underworld_enabled": true,
+          "surface_enabled": true,
+          "guardians_8_fear_enabled": true,
+          "guardians_16_fear_enabled": true,
+          "guardians_32_fear_enabled": true,
+          "unrivaled_guardians_enabled": true,
+          "locations_8_fear_enabled": false,
+          "wardens_enabled": true,
+          "npcs_enabled": true,
+          "awakening_enabled": true,
+          "hidden_aspects_enabled": true,
+          "Grasp_For_Second_Region": 5,
+          "Grasp_For_Third_Region": 10,
+          "Grasp_For_Fourth_Region": 15,
+          "Grasp_For_Victory": 30
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
+  "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
+  "core": {
+    "goal": {
+      "_comment": [
+        "Using 'goal' as the name of an option let you override some of the generated goal parameters"
+      ],
+      "display_name": "The End Objective",
+      "description": "How to End your Randomized playthrough.",
+      "aliases": { "easiest": 0 },
+      "hidden": false
+    },
+    "death_link": {
+      "default": false
+    },
+    "filler_traps": {
+      "_comment": "Using values here let you set a 'recommended' filler_trap percentage or even a default percentage",
+      "values": {
+        "recommended": 20
+      }
+    }
+  },
+  "user": {
+    "underworld_enabled": {
+      "type": "Toggle",
+      "display_name": "Underworld",
+      "description": [
+        "Whether the Underworld region is enabled.",
+        "At least one of Underworld or Surface must be enabled."
+      ],
+      "default": true,
+      "group": "Path Options"
+    },
+    "surface_enabled": {
+      "type": "Toggle",
+      "display_name": "Surface",
+      "description": [
+        "Whether the Surface region is enabled.",
+        "At least one of Underworld or Surface must be enabled."
+      ],
+      "default": true,
+      "group": "Path Options"
+    },
+    "guardians_8_fear_enabled": {
+      "type": "Toggle",
+      "display_name": "Defeat Guardians with 8 Fear",
+      "description": [
+        "Adds locations for defeating each Guardian with 8 fear."
+      ],
+      "default": true,
+      "group": "Guardian Options"
+    },
+    "guardians_16_fear_enabled": {
+      "type": "Toggle",
+      "display_name": "Defeat Guardians with 16 Fear",
+      "description": [
+        "Adds locations for defeating each Guardian with 16 fear."
+      ],
+      "default": false,
+      "group": "Guardian Options"
+    },
+    "guardians_32_fear_enabled": {
+      "type": "Toggle",
+      "display_name": "Defeat Guardians with 32 Fear",
+      "description": [
+        "Adds locations for defeating each Guardian with 32 fear."
+      ],
+      "default": false,
+      "group": "Guardian Options"
+    },
+    "unrivaled_guardians_enabled": {
+      "type": "Toggle",
+      "display_name": "Defeat Unrivaled Guardians",
+      "description": ["Adds locations for defeating each Unrivaled Guardian."],
+      "default": false,
+      "group": "Guardian Options"
+    },
+    "locations_8_fear_enabled": {
+      "type": "Toggle",
+      "display_name": "Clear Locations with 8 Fear",
+      "description": ["Adds locations for clearing each location with 8 Fear."],
+      "default": false,
+      "group": "Miscellaneous Location Options"
+    },
+    "wardens_enabled": {
+      "type": "Toggle",
+      "display_name": "Defeat Wardens",
+      "description": ["Adds locations for defeating each Warden."],
+      "default": true,
+      "group": "Miscellaneous Location Options"
+    },
+    "npcs_enabled": {
+      "type": "Toggle",
+      "display_name": "Meet NPCs",
+      "description": ["Adds locations for meeting each NPC."],
+      "default": true,
+      "group": "Miscellaneous Location Options"
+    },
+    "awakening_enabled": {
+      "type": "Toggle",
+      "display_name": "Include Awakening Arcana Cards",
+      "description": [
+        "Adds items for Arcana Cards with Awakening conditions.",
+        "If disabled, then cards with Awakening conditions can be used whenever.",
+        "If enabled, then the player's Arcana Card configurations should be restricted, so that Arcana Cards that have not been received are not accidentally Awakened."
+      ],
+      "default": true,
+      "group": "Miscellaneous Item Options"
+    },
+    "hidden_aspects_enabled": {
+      "type": "Toggle",
+      "display_name": "Include Hidden Aspects",
+      "description": ["Adds items for each Hidden Aspect."],
+      "default": true,
+      "group": "Miscellaneous Item Options"
+    },
+    "Grasp_For_Second_Region": {
+      "type": "Range",
+      "display_name": "Grasp for Second Region",
+      "description": [
+        "The amount of Grasp required to unlock the second region.",
+        "The second region can still be accessed early if the player can defeat the first guardian without this much Grasp, but it is not expected of the player to do so."
+      ],
+      "range_start": 0,
+      "default": 7,
+      "range_end": 30,
+      "group": "Grasp Options"
+    },
+    "Grasp_For_Third_Region": {
+      "type": "Range",
+      "display_name": "Grasp for Third Region",
+      "description": [
+        "The amount of Grasp required to unlock the third region.",
+        "The third region can still be accessed early if the player can defeat the second guardian without this much Grasp, but it is not expected of the player to do so."
+      ],
+      "range_start": 0,
+      "default": 14,
+      "range_end": 30,
+      "group": "Grasp Options"
+    },
+    "Grasp_For_Fourth_Region": {
+      "type": "Range",
+      "display_name": "Grasp for Fourth Region",
+      "description": [
+        "The amount of Grasp required to unlock the fourth region.",
+        "The fourth region can still be accessed early if the player can defeat the third guardian without this much Grasp, but it is not expected of the player to do so."
+      ],
+      "range_start": 0,
+      "default": 21,
+      "range_end": 30,
+      "group": "Grasp Options"
+    },
+    "Grasp_For_Victory": {
+      "type": "Range",
+      "display_name": "Grasp for Victory",
+      "description": [
+        "The amount of Grasp required for victory.",
+        "After this amount of Grasp is reached, the player must defeat either final guardian (Chronos or Typhon) to claim victory."
+      ],
+      "range_start": 0,
+      "default": 30,
+      "range_end": 30,
+      "group": "Grasp Options"
+    }
+  }
+}
