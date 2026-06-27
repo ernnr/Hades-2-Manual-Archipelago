@@ -1,12 +1,6 @@
 {
-  "Requirements": {},
-  "Gates": {
-    "hidden": true
-  },
-  "Initial Gates": {
-    "hidden": true
-  },
   "Underworld": {
+    "_comment": "-------------------- Region Categories --------------------",
     "hidden": true,
     "yaml_option": ["underworld_enabled"]
   },
@@ -14,6 +8,7 @@
     "hidden": true,
     "yaml_option": ["surface_enabled"]
   },
+
   "Erebus": {
     "yaml_option": ["underworld_enabled"]
   },
@@ -26,6 +21,7 @@
   "Tartarus": {
     "yaml_option": ["underworld_enabled"]
   },
+
   "Ephyra": {
     "yaml_option": ["surface_enabled"]
   },
@@ -38,7 +34,9 @@
   "The Summit": {
     "yaml_option": ["surface_enabled"]
   },
+
   "Guardians": {
+    "_comment": "-------------------- Location Categories --------------------",
     "hidden": true
   },
   "Guardians 8 Fear": {
@@ -53,22 +51,50 @@
   "Unrivaled Guardians": {
     "yaml_option": ["unrivaled_guardians_enabled"]
   },
+
   "Wardens": {
     "yaml_option": ["wardens_enabled"]
   },
   "NPCs": {
     "yaml_option": ["npcs_enabled"]
   },
-  "Arcana Cards": {},
   "Location Clears": {
     "hidden": true
   },
+
+  "Requirements": {
+    "_comment": "-------------------- Item Categories --------------------"
+  },
+
+  "Gates": {
+    "hidden": true
+  },
+  "Initial Gates": {
+    "hidden": true
+  },
+
+  "Arcana Cards": {},
   "Awakening": {
     "hidden": true,
     "yaml_option": ["awakening_enabled"]
   },
+
+  "Weapons and Aspects": {},
+  "Weapons": {
+    "hidden": true
+  },
+  "Aspects": {
+    "hidden": true
+  },
   "Hidden Aspects": {
     "hidden": true,
     "yaml_option": ["hidden_aspects_enabled"]
+  },
+
+  "Keepsakes": {},
+
+  "Familiars": {},
+  "Skins": {
+    "hidden": true
   }
 }

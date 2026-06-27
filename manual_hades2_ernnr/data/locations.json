@@ -417,21 +417,25 @@
     },
     {
       "name": "Nemesis",
+      "region": "Erebus",
       "category": ["Underworld", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Icarus",
+      "region": "Ephyra",
       "category": ["Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Heracles",
+      "region": "Ephyra",
       "category": ["Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Chaos",
+      "region": "Erebus",
       "category": ["Underworld", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
