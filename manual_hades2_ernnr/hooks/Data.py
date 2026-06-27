@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 # called after the game.json file has been loaded
 def after_load_game_file(game_table: dict) -> dict:
     return game_table
@@ -14,6 +16,34 @@ def after_load_progressive_item_file(progressive_item_table: list) -> list:
 # called after the locations.json file has been loaded, before any location loading or processing has occurred
 # if you need access to the locations after processing to add ids, etc., you should use the hooks in World.py
 def after_load_location_file(location_table: list) -> list:
+    # Duplicate "Location Clears" locations for each region
+    matching_locations = []
+    for location in location_table:
+        categories = location.get("category")
+        if isinstance(categories, list) and "Location Clears" in categories:
+            matching_locations.append(location)
+
+    if matching_locations:
+        for location in matching_locations:
+            # Filter and join only the digit characters to get the count
+            cleaned_text = "".join(char for char in location.get("name", "") if char.isdigit())
+            if not cleaned_text:
+                continue
+
+            count = int(cleaned_text)
+
+            # Get the region to construct the name
+            region = location.get("region")
+
+            # Add copies of the base location, so each incrementing location has the same region and categories
+            for index in range(1, count + 1):
+                new_location = deepcopy(location)
+                new_location["name"] = f"{region} Location #{index}"
+                location_table.append(new_location)
+
+            # Remove base location
+            location_table.remove(location)
+
     return location_table
 
 # called after the events.json file has been loaded, before any processing has occurred

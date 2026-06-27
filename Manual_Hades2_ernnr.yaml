@@ -103,11 +103,6 @@ Manual_Hades2_ernnr:
   ##################################
   # Miscellaneous Location Options #
   ##################################
-  locations_8_fear_enabled:
-    # Adds locations for clearing each location with 8 Fear.
-    "false": 50
-    "true": 0
-
   wardens_enabled:
     # Adds locations for defeating each Warden.
     "false": 0

@@ -63,10 +63,6 @@
   "Location Clears": {
     "hidden": true
   },
-  "8 Fear Location Clears": {
-    "hidden": true,
-    "yaml_option": ["locations_8_fear_enabled"]
-  },
   "Awakening": {
     "hidden": true,
     "yaml_option": ["awakening_enabled"]
