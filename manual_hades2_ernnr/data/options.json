@@ -115,42 +115,6 @@
       "default": true,
       "group": "Miscellaneous Item Options"
     },
-    "Grasp_For_Second_Region": {
-      "type": "Range",
-      "display_name": "Grasp for Second Region",
-      "description": [
-        "The amount of Grasp required to unlock the second region.",
-        "The second region can still be accessed early if the player can defeat the first guardian without this much Grasp, but it is not expected of the player to do so."
-      ],
-      "range_start": 0,
-      "default": 7,
-      "range_end": 30,
-      "group": "Grasp Options"
-    },
-    "Grasp_For_Third_Region": {
-      "type": "Range",
-      "display_name": "Grasp for Third Region",
-      "description": [
-        "The amount of Grasp required to unlock the third region.",
-        "The third region can still be accessed early if the player can defeat the second guardian without this much Grasp, but it is not expected of the player to do so."
-      ],
-      "range_start": 0,
-      "default": 14,
-      "range_end": 30,
-      "group": "Grasp Options"
-    },
-    "Grasp_For_Fourth_Region": {
-      "type": "Range",
-      "display_name": "Grasp for Fourth Region",
-      "description": [
-        "The amount of Grasp required to unlock the fourth region.",
-        "The fourth region can still be accessed early if the player can defeat the third guardian without this much Grasp, but it is not expected of the player to do so."
-      ],
-      "range_start": 0,
-      "default": 21,
-      "range_end": 30,
-      "group": "Grasp Options"
-    },
     "Grasp_For_Victory": {
       "type": "Range",
       "display_name": "Grasp for Victory",

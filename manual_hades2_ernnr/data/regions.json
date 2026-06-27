@@ -7,15 +7,15 @@
   },
   "Oceanus": {
     "connects_to": ["Mourning Fields"],
-    "requires": "{OptionCount(Grasp, Grasp_For_Second_Region)} OR |Gate to Oceanus|"
+    "requires": "|Gate to Oceanus|"
   },
   "Mourning Fields": {
     "connects_to": ["Tartarus"],
-    "requires": "{OptionCount(Grasp, Grasp_For_Third_Region)} OR |Gate to Mourning Fields|"
+    "requires": "|Gate to Mourning Fields|"
   },
   "Tartarus": {
     "connects_to": [],
-    "requires": "{OptionCount(Grasp, Grasp_For_Fourth_Region)} OR |Gate to Tartarus|"
+    "requires": "|Gate to Tartarus|"
   },
   "Ephyra": {
     "connects_to": ["Rift of Thessaly"],
@@ -24,14 +24,14 @@
   },
   "Rift of Thessaly": {
     "connects_to": ["Mount Olympus"],
-    "requires": "{OptionCount(Grasp, Grasp_For_Second_Region)} OR |Gate to Rift of Thessaly|"
+    "requires": "|Gate to Rift of Thessaly|"
   },
   "Mount Olympus": {
     "connects_to": ["The Summit"],
-    "requires": "{OptionCount(Grasp, Grasp_For_Third_Region)} OR |Gate to Mount Olympus|"
+    "requires": "|Gate to Mount Olympus|"
   },
   "The Summit": {
     "connects_to": [],
-    "requires": "{OptionCount(Grasp, Grasp_For_Fourth_Region)} OR |Gate to The Summit|"
+    "requires": "|Gate to The Summit|"
   }
 }

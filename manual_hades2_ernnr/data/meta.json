@@ -47,9 +47,6 @@
           "npcs_enabled": true,
           "awakening_enabled": true,
           "hidden_aspects_enabled": true,
-          "Grasp_For_Second_Region": 7,
-          "Grasp_For_Third_Region": 14,
-          "Grasp_For_Fourth_Region": 21,
           "Grasp_For_Victory": 30
         },
         "Hard": {
@@ -64,9 +61,6 @@
           "npcs_enabled": true,
           "awakening_enabled": true,
           "hidden_aspects_enabled": true,
-          "Grasp_For_Second_Region": 5,
-          "Grasp_For_Third_Region": 10,
-          "Grasp_For_Fourth_Region": 15,
           "Grasp_For_Victory": 30
         }
       }
