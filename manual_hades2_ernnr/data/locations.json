@@ -2,9 +2,9 @@
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
   "data": [
     {
-      "name": "Final Guardian",
+      "name": "Claim Victory",
       "victory": true,
-      "requires": "{OptionCount(Grasp, Grasp_For_Victory)}"
+      "requires": "{OptionCount(Grasp, Grasp_For_Victory)} AND (|Gate to Tartarus| OR |Gate to The Summit|)"
     },
 
     {
@@ -12,49 +12,47 @@
       "name": "Hecate",
       "region": "Erebus",
       "category": ["Erebus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Oceanus"]
     },
     {
       "name": "Scylla",
       "region": "Oceanus",
       "category": ["Oceanus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Mourning Fields"]
     },
     {
       "name": "Cerberus",
       "region": "Mourning Fields",
       "category": ["Mourning Fields", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Tartarus"]
     },
     {
       "name": "Chronos",
       "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "category": ["Tartarus", "Underworld", "Guardians"]
     },
     {
       "name": "Polyphemus",
       "region": "Ephyra",
       "category": ["Ephyra", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Rift of Thessaly"]
     },
     {
       "name": "Eris",
       "region": "Rift of Thessaly",
       "category": ["Rift of Thessaly", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Mount Olympus"]
     },
     {
       "name": "Prometheus",
       "region": "Mount Olympus",
       "category": ["Mount Olympus", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to The Summit"]
     },
     {
       "name": "Typhon",
       "region": "The Summit",
-      "category": ["The Summit", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "category": ["The Summit", "Surface", "Guardians"]
     },
 
     {

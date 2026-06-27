@@ -9,15 +9,46 @@
         "progression_skip_balancing": 30
       }
     },
+
     {
-      "count": "1",
-      "name": "Gate to the underworld",
+      "_comment": "-------------------- Gates --------------------",
+      "name": "Gate to Erebus",
+      "category": ["Underworld", "Requirements", "Gates", "Initial Gates"],
+      "progression": true
+    },
+    {
+      "name": "Gate to Ephyra",
+      "category": ["Surface", "Requirements", "Gates", "Initial Gates"],
+      "progression": true
+    },
+    {
+      "_comment": "The following gates are placed on the Guardian before each region",
+      "name": "Gate to Oceanus",
       "category": ["Underworld", "Requirements", "Gates"],
       "progression": true
     },
     {
-      "count": "1",
-      "name": "Gate to the surface",
+      "name": "Gate to Mourning Fields",
+      "category": ["Underworld", "Requirements", "Gates"],
+      "progression": true
+    },
+    {
+      "name": "Gate to Tartarus",
+      "category": ["Underworld", "Requirements", "Gates"],
+      "progression": true
+    },
+    {
+      "name": "Gate to Rift of Thessaly",
+      "category": ["Surface", "Requirements", "Gates"],
+      "progression": true
+    },
+    {
+      "name": "Gate to Mount Olympus",
+      "category": ["Surface", "Requirements", "Gates"],
+      "progression": true
+    },
+    {
+      "name": "Gate to The Summit",
       "category": ["Surface", "Requirements", "Gates"],
       "progression": true
     },

@@ -3,6 +3,9 @@
   "Gates": {
     "hidden": true
   },
+  "Initial Gates": {
+    "hidden": true
+  },
   "Underworld": {
     "hidden": true,
     "yaml_option": ["underworld_enabled"]
