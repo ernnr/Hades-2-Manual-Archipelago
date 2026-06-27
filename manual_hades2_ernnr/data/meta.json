@@ -42,14 +42,10 @@
           "guardians_16_fear_enabled": false,
           "guardians_32_fear_enabled": false,
           "unrivaled_guardians_enabled": false,
-          "locations_8_fear_enabled": false,
           "wardens_enabled": true,
           "npcs_enabled": true,
           "awakening_enabled": true,
           "hidden_aspects_enabled": true,
-          "Grasp_For_Second_Region": 7,
-          "Grasp_For_Third_Region": 14,
-          "Grasp_For_Fourth_Region": 21,
           "Grasp_For_Victory": 30
         },
         "Hard": {
@@ -59,14 +55,10 @@
           "guardians_16_fear_enabled": true,
           "guardians_32_fear_enabled": true,
           "unrivaled_guardians_enabled": true,
-          "locations_8_fear_enabled": false,
           "wardens_enabled": true,
           "npcs_enabled": true,
           "awakening_enabled": true,
           "hidden_aspects_enabled": true,
-          "Grasp_For_Second_Region": 5,
-          "Grasp_For_Third_Region": 10,
-          "Grasp_For_Fourth_Region": 15,
           "Grasp_For_Victory": 30
         }
       }

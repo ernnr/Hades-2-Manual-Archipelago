@@ -40,7 +40,7 @@ Manual_Hades2_ernnr:
   ################
   progression_balancing:
     # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
-    # 
+    #
     # A lower setting means more getting stuck. A higher setting means less getting stuck.
     #
     # You can define additional values between the minimum and maximum values.
@@ -55,9 +55,9 @@ Manual_Hades2_ernnr:
 
   accessibility:
     # Set rules for reachability of your items/locations.
-    # 
+    #
     # **Full:** ensure everything can be reached and acquired.
-    # 
+    #
     # **Minimal:** ensure what is needed to reach your goal can be acquired.
     full: 50
     minimal: 0
@@ -68,55 +68,50 @@ Manual_Hades2_ernnr:
   underworld_enabled:
     # Whether the Underworld region is enabled.
     # At least one of Underworld or Surface must be enabled.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   surface_enabled:
     # Whether the Surface region is enabled.
     # At least one of Underworld or Surface must be enabled.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   ####################
   # Guardian Options #
   ####################
   guardians_8_fear_enabled:
     # Adds locations for defeating each Guardian with 8 fear.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   guardians_16_fear_enabled:
     # Adds locations for defeating each Guardian with 16 fear.
-    'false': 50
-    'true': 0
+    "false": 50
+    "true": 0
 
   guardians_32_fear_enabled:
     # Adds locations for defeating each Guardian with 32 fear.
-    'false': 50
-    'true': 0
+    "false": 50
+    "true": 0
 
   unrivaled_guardians_enabled:
     # Adds locations for defeating each Unrivaled Guardian.
-    'false': 50
-    'true': 0
+    "false": 50
+    "true": 0
 
   ##################################
   # Miscellaneous Location Options #
   ##################################
-  locations_8_fear_enabled:
-    # Adds locations for clearing each location with 8 Fear.
-    'false': 50
-    'true': 0
-
   wardens_enabled:
     # Adds locations for defeating each Warden.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   npcs_enabled:
     # Adds locations for meeting each NPC.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   ##############################
   # Miscellaneous Item Options #
@@ -125,53 +120,17 @@ Manual_Hades2_ernnr:
     # Adds items for Arcana Cards with Awakening conditions.
     # If disabled, then cards with Awakening conditions can be used whenever.
     # If enabled, then the player's Arcana Card configurations should be restricted, so that Arcana Cards that have not been received are not accidentally Awakened.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   hidden_aspects_enabled:
     # Adds items for each Hidden Aspect.
-    'false': 0
-    'true': 50
+    "false": 0
+    "true": 50
 
   #################
   # Grasp Options #
   #################
-  Grasp_For_Second_Region:
-    # The amount of Grasp required to unlock the second region.
-    # The second region can still be accessed early if the player can defeat the first guardian without this much Grasp, but it is not expected of the player to do so.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 30
-    7: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  Grasp_For_Third_Region:
-    # The amount of Grasp required to unlock the third region.
-    # The third region can still be accessed early if the player can defeat the second guardian without this much Grasp, but it is not expected of the player to do so.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 30
-    14: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
-  Grasp_For_Fourth_Region:
-    # The amount of Grasp required to unlock the fourth region.
-    # The fourth region can still be accessed early if the player can defeat the third guardian without this much Grasp, but it is not expected of the player to do so.
-    #
-    # You can define additional values between the minimum and maximum values.
-    # Minimum value is 0
-    # Maximum value is 30
-    21: 50
-    random: 0
-    random-low: 0
-    random-high: 0
-
   Grasp_For_Victory:
     # The amount of Grasp required for victory.
     # After this amount of Grasp is reached, the player must defeat either final guardian (Chronos or Typhon) to claim victory.
@@ -201,7 +160,7 @@ Manual_Hades2_ernnr:
 
   start_inventory_from_pool:
     # Start with these items and don't place them in the world.
-    # 
+    #
     # The game decides what the replacement items will be.
     {}
 
