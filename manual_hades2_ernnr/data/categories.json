@@ -12,7 +12,6 @@
     "yaml_option": ["surface_enabled"]
   },
   "Erebus": {
-    "hidden": true,
     "yaml_option": ["underworld_enabled"]
   },
   "Oceanus": {
