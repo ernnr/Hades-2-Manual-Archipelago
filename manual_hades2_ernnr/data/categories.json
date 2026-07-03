@@ -39,15 +39,6 @@
     "_comment": "-------------------- Location Categories --------------------",
     "hidden": true
   },
-  "Guardians 8 Fear": {
-    "yaml_option": ["guardians_8_fear_enabled"]
-  },
-  "Guardians 16 Fear": {
-    "yaml_option": ["guardians_16_fear_enabled"]
-  },
-  "Guardians 32 Fear": {
-    "yaml_option": ["guardians_32_fear_enabled"]
-  },
   "Unrivaled Guardians": {
     "yaml_option": ["unrivaled_guardians_enabled"]
   },
@@ -73,13 +64,17 @@
     "hidden": true
   },
 
-  "Arcana Cards": {},
+  "Arcana Cards": {
+    "yaml_option": ["!progressive_arcana_cards_enabled"]
+  },
   "Awakening": {
     "hidden": true,
     "yaml_option": ["awakening_enabled"]
   },
 
-  "Weapons and Aspects": {},
+  "Weapons and Aspects": {
+    "yaml_option": ["!progressive_weapons_and_aspects_enabled"]
+  },
   "Weapons": {
     "hidden": true
   },

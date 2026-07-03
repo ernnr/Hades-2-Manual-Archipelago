@@ -80,23 +80,38 @@ Manual_Hades2_ernnr:
   ####################
   # Guardian Options #
   ####################
+  unrivaled_guardians_enabled:
+    # Adds locations for defeating each Unrivaled Guardian.
+    "false": 50
+    "true": 0
+
+  guardians_1_fear_enabled:
+    # Adds locations for defeating each Guardian with 1 Fear.
+    "false": 50
+    "true": 0
+
+  guardians_2_fear_enabled:
+    # Adds locations for defeating each Guardian with 2 Fear.
+    "false": 50
+    "true": 0
+
+  guardians_4_fear_enabled:
+    # Adds locations for defeating each Guardian with 4 Fear.
+    "false": 50
+    "true": 0
+
   guardians_8_fear_enabled:
-    # Adds locations for defeating each Guardian with 8 fear.
-    "false": 0
-    "true": 50
+    # Adds locations for defeating each Guardian with 8 Fear.
+    "false": 50
+    "true": 0
 
   guardians_16_fear_enabled:
-    # Adds locations for defeating each Guardian with 16 fear.
+    # Adds locations for defeating each Guardian with 16 Fear.
     "false": 50
     "true": 0
 
   guardians_32_fear_enabled:
-    # Adds locations for defeating each Guardian with 32 fear.
-    "false": 50
-    "true": 0
-
-  unrivaled_guardians_enabled:
-    # Adds locations for defeating each Unrivaled Guardian.
+    # Adds locations for defeating each Guardian with 32 Fear.
     "false": 50
     "true": 0
 
@@ -142,6 +157,56 @@ Manual_Hades2_ernnr:
     random: 0
     random-low: 0
     random-high: 0
+
+  ############################
+  # Progressive Item Options #
+  ############################
+  progressive_arcana_cards_enabled:
+    # Adds progressive items for Arcana Cards.
+    # Should only be enabled if using a custom save file that has all Weapons, Aspects, and Arcana Cards at level 0 or 1, and the resources necessary to upgrade them.
+    # Should not be enabled if using a completed save file.
+    "false": 50
+    "true": 0
+
+  progressive_weapons_and_aspects_enabled:
+    # Adds progressive items for Weapons and Aspects.
+    # Should only be enabled if using a custom save file that has all Weapons, Aspects, and Arcana Cards at level 0 or 1, and the resources necessary to upgrade them.
+    # Should not be enabled if using a completed save file.
+    "false": 50
+    "true": 0
+
+  ##########################
+  # Location Clear Options #
+  ##########################
+  locations_1_fear_enabled:
+    # Adds locations for clearing each location with 1 Fear.
+    "false": 50
+    "true": 0
+
+  locations_2_fear_enabled:
+    # Adds locations for clearing each location with 2 Fear.
+    "false": 50
+    "true": 0
+
+  locations_4_fear_enabled:
+    # Adds locations for clearing each location with 4 Fear.
+    "false": 50
+    "true": 0
+
+  locations_8_fear_enabled:
+    # Adds locations for clearing each location with 8 Fear.
+    "false": 50
+    "true": 0
+
+  locations_16_fear_enabled:
+    # Adds locations for clearing each location with 16 Fear.
+    "false": 50
+    "true": 0
+
+  locations_32_fear_enabled:
+    # Adds locations for clearing each location with 32 Fear.
+    "false": 50
+    "true": 0
 
   ###########################
   # Item & Location Options #

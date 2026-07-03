@@ -22,21 +22,21 @@ The goal is to acquire 30 Grasp and then Claim Victory against either Chronos or
 
 ## What Hades 2 save file should I use?
 
-The Hades 2 Manual currently assumes you have a completed save file with all possible items already unlocked. If necessary, a completed save file and instructions can be found at: https://www.speedrun.com/hades2/resources.
+The Hades 2 Manual can be played with either a completed save file with all possible items already unlocked and max level, or with the custom save file that has all items unlocked but at level 1. If necessary, a completed save file and instructions can be found at: https://www.speedrun.com/hades2/resources.
+
+If using the custom save file provided, then there are additional options in the yaml to add progressive items for the Arcana Cards, Weapons, and Aspects. See the `progressive_*_enabled` options in the yaml for more details.
 
 ## How do Awakening Arcana Cards work?
 
-Awakening Arcana Cards are activated when certain conditions are met and cannot be disabled otherwise, so they can be tricky to keep track of.
+Awakening Arcana Cards are activated when certain conditions are met and cannot be disabled otherwise, so they can be tricky to keep track of when playing with a completed save file. If using the custom save file, then the awakening cards have not yet been unlocked.
 
-One option is to exclude Awakening Arcana Cards in the yaml by setting `awakening_enabled` to `false`. This way Awakening Arcana Cards will not be assigned to locations and the Awakening Arcana Cards can be used at any time. This does lead to Judgement becoming incredibly powerful in the early game giving access to Arcana Cards that might otherwise be locked. This can also be done for shorter sessions.
+With a completed save file, one option is to exclude Awakening Arcana Cards in the yaml by setting `awakening_enabled` to `false`. This way Awakening Arcana Cards will not be assigned to locations and the Awakening Arcana Cards can be used at any time. This does lead to Judgement becoming incredibly powerful in the early game giving access to Arcana Cards that might otherwise be locked. This can also be done for shorter sessions.
 
 The other option is to include Awakening Arcana Cards in the yaml by setting `awakening_enabled` to `true`. This will randomize the locations of the Arcana Cards, so you will have to take extra care when setting up your Arcana Cards to not enable Awakening Cards you don't have unlocked. However, it can be nearly impossible to avoid activating Awakening Arcana Cards like The Queen until you have a lot of Arcana Cards, so you might have to be lenient on which Arcana Cards you are fine with Awakening early.
 
-Future implementations of the Hades 2 Manual might work with a prepared save file that doesn't have all the Arcana unlocked to resolve these conflicts.
-
 ## How do the Gates work?
 
-There are Gates that lock access for every region in Hades 2. You will always randomly start with 1 Initial Gate for either Erebus or Ephyra and the other Initial Gate will be in a random location. Each Guardian will have a Gate to the next region. For example, Hecate has the Gate to Oceanus.
+There are Gates that lock access for every region in Hades 2. You will always randomly start with 1 Initial Gate for either Erebus or Ephyra and the other Initial Gate will be in a random location. Each 0 Fear Guardian will have a Gate to the next region. For example, Hecate has the Gate to Oceanus.
 
 ## What customization options are there?
 
@@ -44,6 +44,7 @@ The yaml has options for customizing some of the following things. See the docum
 
 - Underworld only or Surface only options
 - Additional Guardian locations
-- Additional Fear based locations (WIP)
+- Additional Fear based locations and Guardians
 - Removing Warden or NPC locations
+- Adding progressive Arcana Carads, Weapons, and Aspects
 - Configuring the amount of Grasp for to Claim Victory
