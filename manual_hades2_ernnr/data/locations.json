@@ -2,233 +2,61 @@
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
   "data": [
     {
-      "name": "Final Guardian",
+      "name": "Claim Victory",
       "victory": true,
-      "requires": "{OptionCount(Grasp, Grasp_For_Victory)}"
+      "requires": "{OptionCount(Grasp, Grasp_For_Victory)} AND (|Gate to Tartarus| OR |Gate to The Summit|)"
     },
 
     {
-      "_comment": "-------------------- Guardians --------------------",
+      "_comment": [
+        "-------------------- Guardians --------------------",
+        "All locations with the 'Guardians' category will be duplicated by Data.py",
+        "The name will be parsed to get the count and all other fields are copied directly."
+      ],
       "name": "Hecate",
       "region": "Erebus",
       "category": ["Erebus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Oceanus"]
     },
     {
       "name": "Scylla",
       "region": "Oceanus",
       "category": ["Oceanus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Mourning Fields"]
     },
     {
       "name": "Cerberus",
       "region": "Mourning Fields",
       "category": ["Mourning Fields", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Tartarus"]
     },
     {
       "name": "Chronos",
       "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "category": ["Tartarus", "Underworld", "Guardians"]
     },
     {
       "name": "Polyphemus",
       "region": "Ephyra",
       "category": ["Ephyra", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Rift of Thessaly"]
     },
     {
       "name": "Eris",
       "region": "Rift of Thessaly",
       "category": ["Rift of Thessaly", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to Mount Olympus"]
     },
     {
       "name": "Prometheus",
       "region": "Mount Olympus",
       "category": ["Mount Olympus", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
+      "place_item": ["Gate to The Summit"]
     },
     {
       "name": "Typhon",
       "region": "The Summit",
-      "category": ["The Summit", "Surface", "Guardians"],
-      "dont_place_item_category": ["Trap"]
-    },
-
-    {
-      "_comment": "-------------------- Guardians 8 Fear --------------------",
-      "name": "Hecate 8 Fear",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Scylla 8 Fear",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Cerberus 8 Fear",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Chronos 8 Fear",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Polyphemus 8 Fear",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Eris 8 Fear",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Prometheus 8 Fear",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Typhon 8 Fear",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Guardians 8 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-
-    {
-      "_comment": "-------------------- Guardians 16 Fear --------------------",
-      "name": "Hecate 16 Fear",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Scylla 16 Fear",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Cerberus 16 Fear",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Chronos 16 Fear",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Polyphemus 16 Fear",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Eris 16 Fear",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Prometheus 16 Fear",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-    {
-      "name": "Typhon 16 Fear",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Guardians 16 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:16)}"
-    },
-
-    {
-      "_comment": "-------------------- Guardians 32 Fear --------------------",
-      "name": "Hecate 32 Fear",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Scylla 32 Fear",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Cerberus 32 Fear",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Chronos 32 Fear",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Polyphemus 32 Fear",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Eris 32 Fear",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Prometheus 32 Fear",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
-    },
-    {
-      "name": "Typhon 32 Fear",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Guardians 32 Fear"],
-      "dont_place_item_category": ["Trap"],
-      "requires": "{ItemValue(Fear:32)}"
+      "category": ["The Summit", "Surface", "Guardians"]
     },
 
     {
@@ -419,21 +247,25 @@
     },
     {
       "name": "Nemesis",
+      "region": "Erebus",
       "category": ["Underworld", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Icarus",
+      "region": "Ephyra",
       "category": ["Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Heracles",
+      "region": "Ephyra",
       "category": ["Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
       "name": "Chaos",
+      "region": "Erebus",
       "category": ["Underworld", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
@@ -481,935 +313,51 @@
     },
 
     {
-      "_comment": "-------------------- Underworld Location Clears --------------------",
-      "name": "Underworld Location 1",
+      "_comment": [
+        "-------------------- Underworld Location Clears --------------------",
+        "All locations with the 'Location Clears' category will be duplicated by Data.py",
+        "The name will be parsed to get the count and all other fields are copied directly."
+      ],
+      "name": "14",
       "region": "Erebus",
       "category": ["Erebus", "Underworld", "Location Clears"]
     },
     {
-      "name": "Underworld Location 2",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 3",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 4",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 5",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 6",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 7",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 8",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 9",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 10",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 11",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 12",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 13",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 14",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 15",
+      "name": "12",
       "region": "Oceanus",
       "category": ["Oceanus", "Underworld", "Location Clears"]
     },
     {
-      "name": "Underworld Location 16",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 17",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 18",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 19",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 20",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 21",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 22",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 23",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 24",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 25",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 26",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 27",
+      "name": "8",
       "region": "Mourning Fields",
       "category": ["Mourning Fields", "Underworld", "Location Clears"]
     },
     {
-      "name": "Underworld Location 28",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 29",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 30",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 31",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 32",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 33",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 34",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 35",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 36",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 37",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 38",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 39",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 40",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 41",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "Location Clears"]
-    },
-    {
-      "name": "Underworld Location 42",
+      "name": "8",
       "region": "Tartarus",
       "category": ["Tartarus", "Underworld", "Location Clears"]
     },
 
     {
       "_comment": "-------------------- Surface Location Clears --------------------",
-      "name": "Surface Location 1",
+      "name": "12",
       "region": "Ephyra",
       "category": ["Ephyra", "Surface", "Location Clears"]
     },
     {
-      "name": "Surface Location 2",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 3",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 4",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 5",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 6",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 7",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 8",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 9",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 10",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 11",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 12",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 13",
+      "name": "10",
       "region": "Rift of Thessaly",
       "category": ["Rift of Thessaly", "Surface", "Location Clears"]
     },
     {
-      "name": "Surface Location 14",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 15",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 16",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 17",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 18",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 19",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 20",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 21",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 22",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 23",
+      "name": "11",
       "region": "Mount Olympus",
       "category": ["Mount Olympus", "Surface", "Location Clears"]
     },
     {
-      "name": "Surface Location 24",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 25",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 26",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 27",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 28",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 29",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 30",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 31",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 32",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 33",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 34",
+      "name": "9",
       "region": "The Summit",
       "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 35",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 36",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 37",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 38",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 39",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 40",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 41",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-    {
-      "name": "Surface Location 42",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "Location Clears"]
-    },
-
-    {
-      "_comment": "-------------------- Underworld 8 Fear Location Clears --------------------",
-      "name": "Underworld 8 Fear Location 1",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 2",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 3",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 4",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 5",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 6",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 7",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 8",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 9",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 10",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 11",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 12",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 13",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 14",
-      "region": "Erebus",
-      "category": ["Erebus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 15",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 16",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 17",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 18",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 19",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 20",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 21",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 22",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 23",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 24",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 25",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 26",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 27",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 28",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 29",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 30",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 31",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 32",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 33",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 34",
-      "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 35",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 36",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 37",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 38",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 39",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 40",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 41",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Underworld 8 Fear Location 42",
-      "region": "Tartarus",
-      "category": ["Tartarus", "Underworld", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-
-    {
-      "_comment": "-------------------- Surface 8 Fear Location Clears --------------------",
-      "name": "Surface 8 Fear Location 1",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 2",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 3",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 4",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 5",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 6",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 7",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 8",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 9",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 10",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 11",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 12",
-      "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 13",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 14",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 15",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 16",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 17",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 18",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 19",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 20",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 21",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 22",
-      "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 23",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 24",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 25",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 26",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 27",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 28",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 29",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 30",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 31",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 32",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 33",
-      "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 34",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 35",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 36",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 37",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 38",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 39",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 40",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 41",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
-    },
-    {
-      "name": "Surface 8 Fear Location 42",
-      "region": "The Summit",
-      "category": ["The Summit", "Surface", "8 Fear Location Clears"],
-      "requires": "{ItemValue(Fear:8)}"
     }
   ]
 }

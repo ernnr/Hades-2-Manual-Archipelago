@@ -5,7 +5,7 @@
   "filler_item_name": "Ashes",
   "starting_items": [
     {
-      "item_categories": ["Gates"],
+      "item_categories": ["Initial Gates"],
       "random": 1
     },
     {

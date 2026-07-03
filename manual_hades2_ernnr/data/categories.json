@@ -1,9 +1,6 @@
 {
-  "Requirements": {},
-  "Gates": {
-    "hidden": true
-  },
   "Underworld": {
+    "_comment": "-------------------- Region Categories --------------------",
     "hidden": true,
     "yaml_option": ["underworld_enabled"]
   },
@@ -11,8 +8,8 @@
     "hidden": true,
     "yaml_option": ["surface_enabled"]
   },
+
   "Erebus": {
-    "hidden": true,
     "yaml_option": ["underworld_enabled"]
   },
   "Oceanus": {
@@ -24,6 +21,7 @@
   "Tartarus": {
     "yaml_option": ["underworld_enabled"]
   },
+
   "Ephyra": {
     "yaml_option": ["surface_enabled"]
   },
@@ -36,41 +34,62 @@
   "The Summit": {
     "yaml_option": ["surface_enabled"]
   },
+
   "Guardians": {
+    "_comment": "-------------------- Location Categories --------------------",
     "hidden": true
-  },
-  "Guardians 8 Fear": {
-    "yaml_option": ["guardians_8_fear_enabled"]
-  },
-  "Guardians 16 Fear": {
-    "yaml_option": ["guardians_16_fear_enabled"]
-  },
-  "Guardians 32 Fear": {
-    "yaml_option": ["guardians_32_fear_enabled"]
   },
   "Unrivaled Guardians": {
     "yaml_option": ["unrivaled_guardians_enabled"]
   },
+
   "Wardens": {
     "yaml_option": ["wardens_enabled"]
   },
   "NPCs": {
     "yaml_option": ["npcs_enabled"]
   },
-  "Arcana Cards": {},
   "Location Clears": {
     "hidden": true
   },
-  "8 Fear Location Clears": {
-    "hidden": true,
-    "yaml_option": ["locations_8_fear_enabled"]
+
+  "Requirements": {
+    "_comment": "-------------------- Item Categories --------------------"
+  },
+
+  "Gates": {
+    "hidden": true
+  },
+  "Initial Gates": {
+    "hidden": true
+  },
+
+  "Arcana Cards": {
+    "yaml_option": ["!progressive_arcana_cards_enabled"]
   },
   "Awakening": {
     "hidden": true,
     "yaml_option": ["awakening_enabled"]
   },
+
+  "Weapons and Aspects": {
+    "yaml_option": ["!progressive_weapons_and_aspects_enabled"]
+  },
+  "Weapons": {
+    "hidden": true
+  },
+  "Aspects": {
+    "hidden": true
+  },
   "Hidden Aspects": {
     "hidden": true,
     "yaml_option": ["hidden_aspects_enabled"]
+  },
+
+  "Keepsakes": {},
+
+  "Familiars": {},
+  "Skins": {
+    "hidden": true
   }
 }
