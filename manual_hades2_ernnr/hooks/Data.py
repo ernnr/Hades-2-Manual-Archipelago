@@ -1,5 +1,7 @@
 from copy import deepcopy
 
+fear_levels = [0, 1, 2, 4, 8, 16, 32]
+
 # called after the game.json file has been loaded
 def after_load_game_file(game_table: dict) -> dict:
     return game_table
@@ -35,11 +37,15 @@ def after_load_location_file(location_table: list) -> list:
             # Get the region to construct the name
             region = location.get("region")
 
-            # Add copies of the base location, so each incrementing location has the same region and categories
-            for index in range(1, count + 1):
-                new_location = deepcopy(location)
-                new_location["name"] = f"{region} Location #{index}"
-                location_table.append(new_location)
+            # For each level of fear, create a new location with the same region and categories, but with a modified name and requirement
+            for fear_level in fear_levels:
+                # Add copies of the base location, so each incrementing location has the same region and categories
+                for index in range(1, count + 1):
+                    new_location = deepcopy(location)
+                    new_location["name"] = f"{fear_level} Fear - {region} Location #{index}"
+                    new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
+                    new_location["category"] += f"{fear_level} Fear - Location Clears"
+                    location_table.append(new_location)
 
             # Remove base location
             location_table.remove(location)
@@ -58,12 +64,25 @@ def after_load_region_file(region_table: dict) -> dict:
 
 # called after the categories.json file has been loaded
 def after_load_category_file(category_table: dict) -> dict:
+    for fear_level in fear_levels:
+        category_table[f"{fear_level} Fear - Location Clears"] = {
+            "hidden": True,
+            "yaml_option": [f"locations_{fear_level}_fear_enabled"]
+        }
     return category_table
 
 # called after the categories.json file has been loaded
 def after_load_option_file(option_table: dict) -> dict:
     # option_table["core"] is the dictionary of modification of existing options
     # option_table["user"] is the dictionary of custom options
+    for fear_level in fear_levels:
+        option_table["user"][f"locations_{fear_level}_fear_enabled"] = {
+            "type": "Toggle",
+            "display_name": f"Clear Locations with {fear_level} Fear",
+            "description": [f"Adds locations for clearing each location with {fear_level} Fear."],
+            "default": False,
+            "group": "Location Clear Options"
+        }
     return option_table
 
 # called after the meta.json file has been loaded and just before the properties of the apworld are defined. You can use this hook to change what is displayed on the webhost
