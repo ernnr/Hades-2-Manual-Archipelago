@@ -42,33 +42,6 @@
       "default": true,
       "group": "Path Options"
     },
-    "guardians_8_fear_enabled": {
-      "type": "Toggle",
-      "display_name": "Defeat Guardians with 8 Fear",
-      "description": [
-        "Adds locations for defeating each Guardian with 8 fear."
-      ],
-      "default": true,
-      "group": "Guardian Options"
-    },
-    "guardians_16_fear_enabled": {
-      "type": "Toggle",
-      "display_name": "Defeat Guardians with 16 Fear",
-      "description": [
-        "Adds locations for defeating each Guardian with 16 fear."
-      ],
-      "default": false,
-      "group": "Guardian Options"
-    },
-    "guardians_32_fear_enabled": {
-      "type": "Toggle",
-      "display_name": "Defeat Guardians with 32 Fear",
-      "description": [
-        "Adds locations for defeating each Guardian with 32 fear."
-      ],
-      "default": false,
-      "group": "Guardian Options"
-    },
     "unrivaled_guardians_enabled": {
       "type": "Toggle",
       "display_name": "Defeat Unrivaled Guardians",
