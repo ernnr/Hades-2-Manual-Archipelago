@@ -64,13 +64,17 @@
     "hidden": true
   },
 
-  "Arcana Cards": {},
+  "Arcana Cards": {
+    "yaml_option": ["!progressive_arcana_cards_enabled"]
+  },
   "Awakening": {
     "hidden": true,
     "yaml_option": ["awakening_enabled"]
   },
 
-  "Weapons and Aspects": {},
+  "Weapons and Aspects": {
+    "yaml_option": ["!progressive_weapons_and_aspects_enabled"]
+  },
   "Weapons": {
     "hidden": true
   },
