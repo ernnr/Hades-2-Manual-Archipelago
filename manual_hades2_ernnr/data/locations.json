@@ -301,8 +301,8 @@
     },
     {
       "name": "Circe",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Surface", "NPCs"],
+      "region": "Rift of Thessaly",
+      "category": ["Rift of Thessaly", "Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
