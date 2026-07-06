@@ -319,6 +319,53 @@
     },
 
     {
+      "_comment": "-------------------- Olympians --------------------",
+      "name": "Aphrodite",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Apollo",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Ares",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Demeter",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Hephaestus",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Hera",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Hestia",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Poseidon",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Zeus",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+
+    {
       "_comment": [
         "-------------------- Underworld Location Clears --------------------",
         "All locations with the 'Location Clears' category will be duplicated by Data.py",

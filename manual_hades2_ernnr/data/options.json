@@ -42,6 +42,7 @@
       "default": true,
       "group": "Path Options"
     },
+
     "unrivaled_guardians_enabled": {
       "type": "Toggle",
       "display_name": "Defeat Unrivaled Guardians",
@@ -63,6 +64,14 @@
       "default": true,
       "group": "Miscellaneous Location Options"
     },
+    "olympians_enabled": {
+      "type": "Toggle",
+      "display_name": "Meet Olympians",
+      "description": ["Adds locations for meeting each Olympian."],
+      "default": true,
+      "group": "Miscellaneous Location Options"
+    },
+
     "awakening_enabled": {
       "type": "Toggle",
       "display_name": "Include Awakening Arcana Cards",
@@ -81,6 +90,7 @@
       "default": true,
       "group": "Miscellaneous Item Options"
     },
+
     "Grasp_For_Victory": {
       "type": "Range",
       "display_name": "Grasp for Victory",
