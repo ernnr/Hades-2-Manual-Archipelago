@@ -311,6 +311,12 @@
       "category": ["Mount Olympus", "Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
+    {
+      "name": "Athena",
+      "region": "Mount Olympus",
+      "category": ["Mount Olympus", "Surface", "NPCs"],
+      "dont_place_item_category": ["Requirements"]
+    },
 
     {
       "_comment": [
