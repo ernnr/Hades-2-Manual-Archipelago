@@ -301,8 +301,8 @@
     },
     {
       "name": "Circe",
-      "region": "Oceanus",
-      "category": ["Oceanus", "Surface", "NPCs"],
+      "region": "Rift of Thessaly",
+      "category": ["Rift of Thessaly", "Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
     },
     {
@@ -310,6 +310,59 @@
       "region": "Mount Olympus",
       "category": ["Mount Olympus", "Surface", "NPCs"],
       "dont_place_item_category": ["Requirements"]
+    },
+    {
+      "name": "Athena",
+      "region": "Mount Olympus",
+      "category": ["Mount Olympus", "Surface", "NPCs"],
+      "dont_place_item_category": ["Requirements"]
+    },
+
+    {
+      "_comment": "-------------------- Olympians --------------------",
+      "name": "Aphrodite",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Apollo",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Ares",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Demeter",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Hephaestus",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Hera",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Hestia",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
+    },
+    {
+      "name": "Poseidon",
+      "region": "Erebus",
+      "category": ["Underworld", "Olympians"]
+    },
+    {
+      "name": "Zeus",
+      "region": "Ephyra",
+      "category": ["Surface", "Olympians"]
     },
 
     {
