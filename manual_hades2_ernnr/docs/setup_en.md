@@ -20,7 +20,9 @@ The following instructions are necessary to Generate an Archipelago with the Had
 
 The MultiWorld Game can either be hosted locally by using the "Host" option in the Archipelago Launcher or by uploading the `AP_#####.zip` file to https://archipelago.gg/uploads. Once hosted, the server and port along with slot information can be shared with the players.
 
-The MutltiWorld Game can be joined using the "Manual Client" found in the Archipelago Launcher or by using other Manual trackers like https://drawesome4333.github.io/ap-tracker/. Then enter the server and port information along with the information for the specific slot.
+The MutltiWorld Game can be joined using the "Manual Client" found in the Archipelago Launcher. Then enter the server and port information along with the information for the specific slot.
+
+Hades 2 can be launched like normal and you can use either a completed save file or the custom save file included with the manual.
 
 ## Game Troubleshooting
 
