@@ -49,6 +49,9 @@
   "NPCs": {
     "yaml_option": ["npcs_enabled"]
   },
+  "Olympians": {
+    "yaml_option": ["olympians_enabled"]
+  },
   "Location Clears": {
     "hidden": true
   },

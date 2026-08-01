@@ -42,7 +42,6 @@ def after_load_region_file(region_table: dict) -> dict:
 def after_load_category_file(category_table: dict) -> dict:
     for category, _ in progressive_items.items():
         category_table[f"Progressive {category}"] = {
-            "hidden": True,
             "yaml_option": [f"progressive_{category.lower().replace(' ', '_')}_enabled"]
         }
 
