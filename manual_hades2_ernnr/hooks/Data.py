@@ -174,7 +174,6 @@ def duplicate_guardian_clears(location_table: list) -> list:
                 new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
                 if fear_level > 0:
                     new_location["category"] += [f"{fear_level} Fear - Guardians"]
-                    new_location.pop("place_item", None)  # Remove place_item for fear levels greater than 0, since Gates are only required for fear 0
                 location_table.append(new_location)
 
             # Remove base location
