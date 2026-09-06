@@ -42,7 +42,12 @@ def after_load_region_file(region_table: dict) -> dict:
 def after_load_category_file(category_table: dict) -> dict:
     for category, _ in progressive_items.items():
         category_table[f"Progressive {category}"] = {
+            "hidden": True,
             "yaml_option": [f"progressive_{category.lower().replace(' ', '_')}_enabled"]
+        }
+        category_table[f"Non-Progressive {category}"] = {
+            "hidden": True,
+            "yaml_option": [f"!progressive_{category.lower().replace(' ', '_')}_enabled"]
         }
 
     for fear_level in fear_levels[1:]:  # Skip 0 Fear since it doesn't need an option
@@ -108,10 +113,11 @@ def duplicate_progressive_items(item_table: list) -> list:
         if matching_items:
             for item in matching_items:
                 name = item.get("name")
+                item["category"] += [f"Non-Progressive {category}"]
 
                 new_item = deepcopy(item)
                 new_item["name"] = f"Progressive - {name}"
-                new_item["category"].remove(category)
+                new_item["category"].remove(f"Non-Progressive {category}")
                 new_item["category"] += [f"Progressive {category}"]
                 new_item["count"] = count
                 item_table.append(new_item)
