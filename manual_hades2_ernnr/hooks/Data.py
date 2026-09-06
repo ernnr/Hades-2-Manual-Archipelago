@@ -142,7 +142,7 @@ def duplicate_location_clears(location_table: list) -> list:
                 # Add copies of the base location, so each incrementing location has the same region and categories
                 for index in range(1, count + 1):
                     new_location = deepcopy(location)
-                    new_location["name"] = f"{fear_level} Fear - {region} Location #{index}"
+                    new_location["name"] = f"{fear_level} Fear - {region} Location #{index:02d}"
                     new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
                     if fear_level > 0:
                         new_location["category"] += [f"{fear_level} Fear - Location Clears"]
@@ -170,7 +170,7 @@ def duplicate_guardian_clears(location_table: list) -> list:
             # For each level of fear, create a new location with the same region and categories, but with a modified name and requirement
             for fear_level in fear_levels:
                 new_location = deepcopy(location)
-                new_location["name"] = f"{fear_level} Fear - {name}"
+                new_location["name"] = f"{fear_level} Fear ~ {name}"
                 new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
                 if fear_level > 0:
                     new_location["category"] += [f"{fear_level} Fear - Guardians"]
