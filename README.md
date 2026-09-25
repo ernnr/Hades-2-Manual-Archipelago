@@ -11,7 +11,7 @@ For the primary setup and usage guidance, refer to:
 
 ## How the Manual Works
 
-The Hades 2 Manual starts each player with a randomized starting setup: one random weapon or aspect, one random keepsake, and an initial path gate to either Erebus or Ephyra. The rest of the progression is distributed across checks that are completed in-game, such as defeating guardians, meeting NPCs, clearing combat encounters, or reaching other progression milestones.
+The Hades 2 Manual starts each player with a randomized starting setup that includes some Aspects, Keepsakes, Vows, and an initial path Gate to either Erebus or Ephyra. The rest of the progression is distributed across checks that are completed in-game, such as defeating guardians, meeting NPCs, clearing combat encounters, or reaching other progression milestones.
 
 The main objective is to collect the configured amount of Grasp and then claim victory by defeating either Chronos or Typhon.
 
@@ -21,7 +21,7 @@ The content in the data folder defines the structure of the manual without relyi
 
 ### Items
 
-The item definitions in [manual_hades2_ernnr/data/items.json](manual_hades2_ernnr/data/items.json) describe the randomized item pool that can be received from Archipelago. These include progression items such as Gates, Weapons, Vows, and Grasp, as well as useful items such as Arcana Cards, Aspects, Keepsakes and Familiars.
+The item definitions in [manual_hades2_ernnr/data/items.json](manual_hades2_ernnr/data/items.json) describe the randomized item pool that can be received from Archipelago. These include progression items such as Gates, Weapons, Vows, and Grasp, as well as useful items such as Arcana Cards, Aspects, Keepsakes, and Familiars.
 
 ### Locations
 
