@@ -10,11 +10,15 @@
     },
     {
       "item_categories": ["Weapons", "Aspects"],
-      "random": 1
+      "random": 3
+    },
+    {
+      "item_categories": ["Vows"],
+      "random": 3
     },
     {
       "item_categories": ["Keepsakes"],
-      "random": 1
+      "random": 3
     }
   ]
 }

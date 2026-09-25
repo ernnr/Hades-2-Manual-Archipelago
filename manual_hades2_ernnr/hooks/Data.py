@@ -42,7 +42,12 @@ def after_load_region_file(region_table: dict) -> dict:
 def after_load_category_file(category_table: dict) -> dict:
     for category, _ in progressive_items.items():
         category_table[f"Progressive {category}"] = {
+            "hidden": True,
             "yaml_option": [f"progressive_{category.lower().replace(' ', '_')}_enabled"]
+        }
+        category_table[f"Non-Progressive {category}"] = {
+            "hidden": True,
+            "yaml_option": [f"!progressive_{category.lower().replace(' ', '_')}_enabled"]
         }
 
     for fear_level in fear_levels[1:]:  # Skip 0 Fear since it doesn't need an option
@@ -108,10 +113,11 @@ def duplicate_progressive_items(item_table: list) -> list:
         if matching_items:
             for item in matching_items:
                 name = item.get("name")
+                item["category"] += [f"Non-Progressive {category}"]
 
                 new_item = deepcopy(item)
                 new_item["name"] = f"Progressive - {name}"
-                new_item["category"].remove(category)
+                new_item["category"].remove(f"Non-Progressive {category}")
                 new_item["category"] += [f"Progressive {category}"]
                 new_item["count"] = count
                 item_table.append(new_item)
@@ -142,7 +148,7 @@ def duplicate_location_clears(location_table: list) -> list:
                 # Add copies of the base location, so each incrementing location has the same region and categories
                 for index in range(1, count + 1):
                     new_location = deepcopy(location)
-                    new_location["name"] = f"{fear_level} Fear - {region} Location #{index}"
+                    new_location["name"] = f"{fear_level} Fear - {region} Location #{index:02d}"
                     new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
                     if fear_level > 0:
                         new_location["category"] += [f"{fear_level} Fear - Location Clears"]
@@ -170,11 +176,10 @@ def duplicate_guardian_clears(location_table: list) -> list:
             # For each level of fear, create a new location with the same region and categories, but with a modified name and requirement
             for fear_level in fear_levels:
                 new_location = deepcopy(location)
-                new_location["name"] = f"{fear_level} Fear - {name}"
+                new_location["name"] = f"{fear_level} Fear ~ {name}"
                 new_location["requires"] = f"{{ItemValue(Fear:{fear_level})}}"
                 if fear_level > 0:
                     new_location["category"] += [f"{fear_level} Fear - Guardians"]
-                    new_location.pop("place_item", None)  # Remove place_item for fear levels greater than 0, since Gates are only required for fear 0
                 location_table.append(new_location)
 
             # Remove base location

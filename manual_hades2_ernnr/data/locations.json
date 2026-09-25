@@ -15,20 +15,17 @@
       ],
       "name": "Hecate",
       "region": "Erebus",
-      "category": ["Erebus", "Underworld", "Guardians"],
-      "place_item": ["Gate to Oceanus"]
+      "category": ["Erebus", "Underworld", "Guardians"]
     },
     {
       "name": "Scylla",
       "region": "Oceanus",
-      "category": ["Oceanus", "Underworld", "Guardians"],
-      "place_item": ["Gate to Mourning Fields"]
+      "category": ["Oceanus", "Underworld", "Guardians"]
     },
     {
       "name": "Cerberus",
       "region": "Mourning Fields",
-      "category": ["Mourning Fields", "Underworld", "Guardians"],
-      "place_item": ["Gate to Tartarus"]
+      "category": ["Mourning Fields", "Underworld", "Guardians"]
     },
     {
       "name": "Chronos",
@@ -38,20 +35,17 @@
     {
       "name": "Polyphemus",
       "region": "Ephyra",
-      "category": ["Ephyra", "Surface", "Guardians"],
-      "place_item": ["Gate to Rift of Thessaly"]
+      "category": ["Ephyra", "Surface", "Guardians"]
     },
     {
       "name": "Eris",
       "region": "Rift of Thessaly",
-      "category": ["Rift of Thessaly", "Surface", "Guardians"],
-      "place_item": ["Gate to Mount Olympus"]
+      "category": ["Rift of Thessaly", "Surface", "Guardians"]
     },
     {
       "name": "Prometheus",
       "region": "Mount Olympus",
-      "category": ["Mount Olympus", "Surface", "Guardians"],
-      "place_item": ["Gate to The Summit"]
+      "category": ["Mount Olympus", "Surface", "Guardians"]
     },
     {
       "name": "Typhon",
@@ -247,6 +241,12 @@
     },
     {
       "name": "Nemesis",
+      "region": "Erebus",
+      "category": ["Underworld", "NPCs"],
+      "dont_place_item_category": ["Requirements"]
+    },
+    {
+      "name": "Selene",
       "region": "Erebus",
       "category": ["Underworld", "NPCs"],
       "dont_place_item_category": ["Requirements"]
