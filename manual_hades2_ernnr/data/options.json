@@ -27,7 +27,7 @@
       "display_name": "Underworld",
       "description": [
         "Whether the Underworld region is enabled.",
-        "At least one of Underworld or Surface must be enabled."
+        "At least one of Underworld, Surface, or Chaos Trials must be enabled."
       ],
       "default": true,
       "group": "Path Options"
@@ -37,9 +37,22 @@
       "display_name": "Surface",
       "description": [
         "Whether the Surface region is enabled.",
-        "At least one of Underworld or Surface must be enabled."
+        "At least one of Underworld, Surface, or Chaos Trials must be enabled."
       ],
       "default": true,
+      "group": "Path Options"
+    },
+
+    "number_of_chaos_trials": {
+      "type": "Range",
+      "display_name": "Number of Chaos Trials",
+      "description": [
+        "The number of Chaos Trials to include.",
+        "Each Chaos Trial will add 1 Key and 10 locations."
+      ],
+      "range_start": 0,
+      "default": 5,
+      "range_end": 30,
       "group": "Path Options"
     },
 

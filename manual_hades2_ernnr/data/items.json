@@ -62,6 +62,188 @@
     },
 
     {
+      "_comment": "-------------------- Keys --------------------",
+      "name": "Key to Trial of Origin",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-01"
+    },
+    {
+      "name": "Key to Trial of Salt",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-02"
+    },
+    {
+      "name": "Key to Trial of Humility",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-03"
+    },
+    {
+      "name": "Key to Trial of Brawn",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-04"
+    },
+    {
+      "name": "Key to Trial of Vengeance",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-05"
+    },
+    {
+      "name": "Key to Trial of Thunder",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-06"
+    },
+    {
+      "name": "Key to Trial of Haste",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-07"
+    },
+    {
+      "name": "Key to Trial of the Moon",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-08"
+    },
+    {
+      "name": "Key to Trial of Gold",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-09"
+    },
+    {
+      "name": "Key to Trial of the Fall",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-10"
+    },
+    {
+      "name": "Key to Trial of Slaughter",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-11"
+    },
+    {
+      "name": "Key to Trial of Blood",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-12"
+    },
+    {
+      "name": "Key to Trial of Fury",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-13"
+    },
+    {
+      "name": "Key to Trial of Precarity",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-14"
+    },
+    {
+      "name": "Key to Trial of Heartache",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-15"
+    },
+    {
+      "name": "Key to Trial of Glory",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-16"
+    },
+    {
+      "name": "Key to Trial of Doom",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-17"
+    },
+    {
+      "name": "Key to Trial of Vigor",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-18"
+    },
+    {
+      "name": "Key to Trial of Flame",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-19"
+    },
+    {
+      "name": "Key to Trial of the Maiden",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-20"
+    },
+    {
+      "name": "Key to Trial of the Flock",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-21"
+    },
+    {
+      "name": "Key to Trial of the Jackal",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-22"
+    },
+    {
+      "name": "Key to Trial of the Banshee",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-23"
+    },
+    {
+      "name": "Key to Trial of the Daemon",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-24"
+    },
+    {
+      "name": "Key to Trial of the Marauder",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-25"
+    },
+    {
+      "name": "Key to Trial of the Outcast",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-26"
+    },
+    {
+      "name": "Key to Trial of the Supreme",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-27"
+    },
+    {
+      "name": "Key to Trial of the Drifter",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-28"
+    },
+    {
+      "name": "Key to Trial of the Fairest",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-29"
+    },
+    {
+      "name": "Key to Trial of Destiny",
+      "category": ["Chaos Trials", "Keys"],
+      "progression": true,
+      "sort-key": "key-30"
+    },
+
+    {
       "_comment": "-------------------- Arcana Cards --------------------",
       "count": 1,
       "name": "The Sorceress",

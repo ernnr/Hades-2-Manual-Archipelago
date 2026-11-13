@@ -33,5 +33,9 @@
   "The Summit": {
     "connects_to": [],
     "requires": "|Gate to The Summit|"
+  },
+  "Chaos Trials": {
+    "starting": true,
+    "requires": "|@Keys|"
   }
 }

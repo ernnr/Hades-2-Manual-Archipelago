@@ -423,6 +423,188 @@
       "name": "9",
       "region": "The Summit",
       "category": ["The Summit", "Surface", "Location Clears"]
+    },
+
+    {
+      "_comment": "-------------------- Chaos Trials --------------------",
+      "name": "Trial of Origin",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Origin|"
+    },
+    {
+      "name": "Trial of Salt",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Salt|"
+    },
+    {
+      "name": "Trial of Humility",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Humility|"
+    },
+    {
+      "name": "Trial of Brawn",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Brawn|"
+    },
+    {
+      "name": "Trial of Vengeance",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Vengeance|"
+    },
+    {
+      "name": "Trial of Thunder",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Thunder|"
+    },
+    {
+      "name": "Trial of Haste",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Haste|"
+    },
+    {
+      "name": "Trial of the Moon",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Moon|"
+    },
+    {
+      "name": "Trial of Gold",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Gold|"
+    },
+    {
+      "name": "Trial of the Fall",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Fall|"
+    },
+    {
+      "name": "Trial of Slaughter",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Slaughter|"
+    },
+    {
+      "name": "Trial of Blood",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Blood|"
+    },
+    {
+      "name": "Trial of Fury",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Fury|"
+    },
+    {
+      "name": "Trial of Precarity",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Precarity|"
+    },
+    {
+      "name": "Trial of Heartache",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Heartache|"
+    },
+    {
+      "name": "Trial of Glory",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Glory|"
+    },
+    {
+      "name": "Trial of Doom",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Doom|"
+    },
+    {
+      "name": "Trial of Vigor",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Vigor|"
+    },
+    {
+      "name": "Trial of Flame",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Flame|"
+    },
+    {
+      "name": "Trial of the Maiden",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Maiden|"
+    },
+    {
+      "name": "Trial of the Flock",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Flock|"
+    },
+    {
+      "name": "Trial of the Jackal",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Jackal|"
+    },
+    {
+      "name": "Trial of the Banshee",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Banshee|"
+    },
+    {
+      "name": "Trial of the Daemon",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Daemon|"
+    },
+    {
+      "name": "Trial of the Marauder",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Marauder|"
+    },
+    {
+      "name": "Trial of the Outcast",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Outcast|"
+    },
+    {
+      "name": "Trial of the Supreme",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Supreme|"
+    },
+    {
+      "name": "Trial of the Drifter",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Drifter|"
+    },
+    {
+      "name": "Trial of the Fairest",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of the Fairest|"
+    },
+    {
+      "name": "Trial of Destiny",
+      "region": "Chaos Trials",
+      "category": ["Chaos Trials"],
+      "requires": "|Key to Trial of Destiny|"
     }
   ]
 }

@@ -5,6 +5,16 @@ progressive_items = {
     "Arcana Cards": 3,
     "Weapons and Aspects": 5
 }
+number_of_locations_in_region = {
+    "Erebus": 14,
+    "Oceanus": 12,
+    "Mourning Fields": 8,
+    "Tartarus": 8,
+    "Ephyra": 12,
+    "Rift of Thessaly": 10,
+    "Mount Olympus": 11,
+    "The Summit": 9
+}
 
 # called after the game.json file has been loaded
 def after_load_game_file(game_table: dict) -> dict:
@@ -26,6 +36,7 @@ def after_load_progressive_item_file(progressive_item_table: list) -> list:
 def after_load_location_file(location_table: list) -> list:
     location_table = duplicate_location_clears(location_table)
     location_table = duplicate_guardian_clears(location_table)
+    location_table = duplicate_chaos_trials(location_table)
     return location_table
 
 # called after the events.json file has been loaded, before any processing has occurred
@@ -181,6 +192,39 @@ def duplicate_guardian_clears(location_table: list) -> list:
                 if fear_level > 0:
                     new_location["category"] += [f"{fear_level} Fear - Guardians"]
                 location_table.append(new_location)
+
+            # Remove base location
+            location_table.remove(location)
+
+    return location_table
+
+# Duplicates locations with the "Chaos Trials" category for each location in the trial's region, creating new locations with modified names.
+# The Chaos Trials will be filtered out in World.py based on the options selected.
+def duplicate_chaos_trials(location_table: list) -> list:
+    matching_locations = []
+    for location in location_table:
+        categories = location.get("category")
+        if isinstance(categories, list) and "Chaos Trials" in categories:
+            matching_locations.append(location)
+
+
+    if matching_locations:
+        for location in matching_locations:
+            # Get the original name to construct the new name
+            name = location.get("name")
+            in_game_region = location.get("in_game_region")
+            number_of_locations = 9 # number_of_locations_in_region.get(in_game_region, 0)
+
+            # For each location in the trial's region, add a new location with a modified name
+            for index in range(1, number_of_locations + 1):
+                new_location = deepcopy(location)
+                new_location["name"] = f"{name} #{index:02d}"
+                location_table.append(new_location)
+
+            # Add a location for defeating the trial's guardian
+            new_location = deepcopy(location)
+            new_location["name"] = f"{name} Guardian"
+            location_table.append(new_location)
 
             # Remove base location
             location_table.remove(location)

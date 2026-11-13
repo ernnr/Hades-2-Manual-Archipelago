@@ -18,6 +18,8 @@ from ..Helpers import is_option_enabled, get_option_value, format_state_prog_ite
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
 
+import random
+
 ########################################################################################
 ## Order of method calls when the world generates:
 ##    1. create_regions - Creates regions and locations
@@ -30,7 +32,40 @@ import logging
 ## The fill_slot_data method will be used to send data to the Manual client for later use, like deathlink.
 ########################################################################################
 
-
+all_chaos_trials = [
+    "Trial of Origin",
+    "Trial of Salt",
+    "Trial of Humility",
+    "Trial of Brawn",
+    "Trial of Vengeance",
+    "Trial of Thunder",
+    "Trial of Haste",
+    "Trial of the Moon",
+    "Trial of Gold",
+    "Trial of the Fall",
+    "Trial of Slaughter",
+    "Trial of Blood",
+    "Trial of Fury",
+    "Trial of Precarity",
+    "Trial of Heartache",
+    "Trial of Glory",
+    "Trial of Doom",
+    "Trial of Vigor",
+    "Trial of Flame",
+    "Trial of the Maiden",
+    "Trial of the Flock",
+    "Trial of the Jackal",
+    "Trial of the Banshee",
+    "Trial of the Daemon",
+    "Trial of the Marauder",
+    "Trial of the Outcast",
+    "Trial of the Supreme",
+    "Trial of the Drifter",
+    "Trial of the Fairest",
+    "Trial of Destiny"
+]
+included_chaos_trials = []
+excluded_chaos_trials = []
 
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
@@ -54,12 +89,20 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     locationNamesToRemove: list[str] = [] # List of location names
 
     # Add your code here to calculate which locations to remove
+    val = get_option_value(multiworld, player, "number_of_chaos_trials")
+    number_of_chaos_trials: int = val if isinstance(val, int) else 0
+    global included_chaos_trials, excluded_chaos_trials
+    included_chaos_trials = random.sample(all_chaos_trials, number_of_chaos_trials)
+    excluded_chaos_trials = [trial for trial in all_chaos_trials if trial not in included_chaos_trials]
 
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
                 if location.name in locationNamesToRemove:
                     region.locations.remove(location)
+                for trial in excluded_chaos_trials:
+                    if trial in location.name:
+                        region.locations.remove(location)
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
@@ -85,6 +128,11 @@ def before_create_items_filler(item_pool: list, world: World, multiworld: MultiW
     #
     # Because multiple copies of an item can exist, you need to add an item name
     # to the list multiple times if you want to remove multiple copies of it.
+    for item in item_pool:
+        if item.name.startswith("Key to "):
+            trial_name = item.name.removeprefix("Key to ")
+            if trial_name in excluded_chaos_trials:
+                itemNamesToRemove.append(item.name)
 
     for itemName in itemNamesToRemove:
         item = next(i for i in item_pool if i.name == itemName)

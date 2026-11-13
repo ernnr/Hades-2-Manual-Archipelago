@@ -68,15 +68,28 @@ Manual_Hades2_ernnr:
   ################
   underworld_enabled:
     # Whether the Underworld region is enabled.
-    # At least one of Underworld or Surface must be enabled.
+    # At least one of Underworld, Surface, or Chaos Trials must be enabled.
     "false": 0
     "true": 50
 
   surface_enabled:
     # Whether the Surface region is enabled.
-    # At least one of Underworld or Surface must be enabled.
+    # At least one of Underworld, Surface, or Chaos Trials must be enabled.
     "false": 0
     "true": 50
+
+  number_of_chaos_trials:
+    # The number of Chaos Trials to include.
+    # Each Chaos Trial will add 1 Key and 10 locations.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 30
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-30: 0 # random value between 0 and 30
 
   ####################
   # Guardian Options #

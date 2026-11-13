@@ -35,6 +35,8 @@
     "yaml_option": ["surface_enabled"]
   },
 
+  "Chaos Trials": {},
+
   "Guardians": {
     "_comment": "-------------------- Location Categories --------------------",
     "hidden": true
@@ -64,6 +66,9 @@
     "hidden": true
   },
   "Initial Gates": {
+    "hidden": true
+  },
+  "Keys": {
     "hidden": true
   },
 
